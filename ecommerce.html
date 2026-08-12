@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ahsan Store - E-Commerce</title>
+
+    <link rel="stylesheet" href="ecommerce.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            Ahsan Store
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+            <button id="cartBtn" class="cart-btn">
+                🛒 Cart <span id="cartCount">0</span>
+            </button>
+        </div>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>Welcome to Ahsan Store</h1>
+
+            <p>
+                Find the best products at affordable prices.
+            </p>
+
+            <a href="#products" class="shop-btn">
+                Shop Now
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+
+        <h2>Our Products</h2>
+
+        <!-- Search and Filter -->
+        <div class="controls">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+
+            <select id="categoryFilter">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+                <option value="electronics">
+                    Electronics
+                </option>
+
+                <option value="clothing">
+                    Clothing
+                </option>
+
+                <option value="shoes">
+                    Shoes
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- Products -->
+        <div id="productContainer" class="product-container">
+
+            <!-- Products JavaScript se ayenge -->
+
+        </div>
+
+    </section>
+
+
+    <!-- Cart -->
+    <div id="cartPanel" class="cart-panel">
+
+        <div class="cart-header">
+
+            <h2>Your Cart</h2>
+
+            <button id="closeCart">
+                ✕
+            </button>
+
+        </div>
+
+
+        <div id="cartItems">
+
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <h3>
+                Total:
+                $<span id="cartTotal">0</span>
+            </h3>
+
+            <button id="clearCart" class="clear-btn">
+                Clear Cart
+            </button>
+
+            <button id="checkoutBtn" class="checkout-btn">
+                Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+
+
+    <!-- About -->
+    <section id="about" class="about">
+
+        <h2>About Ahsan Store</h2>
+
+        <p>
+            A modern e-commerce website created using
+            HTML, CSS and JavaScript.
+        </p>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            Email: ahsanstore@example.com
+        </p>
+
+        <p>
+            Phone: +92 3413083020
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Ahsan Store. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="ecommerce.js"></script>
+
+</body>
+</html>

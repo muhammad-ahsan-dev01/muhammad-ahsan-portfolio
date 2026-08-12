@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login & Signup - Ahsan</title>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+        <!-- Left Side -->
+        <div class="welcome-section">
+
+            <h1>Welcome to Ahsan</h1>
+
+            <p>
+                Create your account or login to continue.
+            </p>
+
+            <div class="welcome-icon">
+                🔐
+            </div>
+
+        </div>
+
+
+        <!-- Right Side -->
+        <div class="form-section">
+
+            <!-- Login Form -->
+            <div id="loginForm">
+
+                <h2>Login</h2>
+
+                <p class="form-text">
+                    Welcome back! Please login to your account.
+                </p>
+
+                <form id="login">
+
+                    <div class="input-group">
+
+                        <label>Email</label>
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Password</label>
+
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button type="submit" class="main-btn">
+                        Login
+                    </button>
+
+                </form>
+
+
+                <p class="switch-text">
+                    Don't have an account?
+                    <button id="showSignup">
+                        Sign Up
+                    </button>
+                </p>
+
+            </div>
+
+
+            <!-- Signup Form -->
+            <div id="signupForm" class="hidden">
+
+                <h2>Create Account</h2>
+
+                <p class="form-text">
+                    Create your account to get started.
+                </p>
+
+                <form id="signup">
+
+                    <div class="input-group">
+
+                        <label>Full Name</label>
+
+                        <input
+                            type="text"
+                            id="signupName"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Email</label>
+
+                        <input
+                            type="email"
+                            id="signupEmail"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Password</label>
+
+                        <input
+                            type="password"
+                            id="signupPassword"
+                            placeholder="Create a password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button type="submit" class="main-btn">
+                        Create Account
+                    </button>
+
+                </form>
+
+
+                <p class="switch-text">
+                    Already have an account?
+                    <button id="showLogin">
+                        Login
+                    </button>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Back to Portfolio -->
+
+    <a href="index.html" class="back-btn">
+        ← Back to Portfolio
+    </a>
+
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

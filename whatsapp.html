@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WhatsApp Clone UI</title>
+
+    <link rel="stylesheet" href="whatsapp.css">
+</head>
+
+<body>
+
+    <div class="whatsapp-container">
+
+        <!-- Header -->
+        <div class="header">
+
+            <div class="profile">
+                <div class="profile-img">👤</div>
+
+                <div>
+                    <h2>WhatsApp</h2>
+                    <span>Online</span>
+                </div>
+            </div>
+
+            <div class="header-icons">
+                <button>🔍</button>
+                <button>⋮</button>
+            </div>
+
+        </div>
+
+
+        <!-- Chat Area -->
+        <div class="chat-area" id="chatArea">
+
+            <div class="message received">
+                <span>Hello! 👋</span>
+                <small>10:30 AM</small>
+            </div>
+
+            <div class="message sent">
+                <span>Hi! How are you?</span>
+                <small>10:31 AM ✓✓</small>
+            </div>
+
+            <div class="message received">
+                <span>I'm fine 😊 What are you doing?</span>
+                <small>10:32 AM</small>
+            </div>
+
+            <div class="message sent">
+                <span>I'm working on my portfolio 💻</span>
+                <small>10:33 AM ✓✓</small>
+            </div>
+
+        </div>
+
+
+        <!-- Message Input -->
+        <div class="input-area">
+
+            <button class="emoji-btn">😊</button>
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Type a message"
+            >
+
+            <button id="sendBtn" class="send-btn">➤</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Back Button -->
+    <a href="index.html" class="back-btn">
+        ← Back to Portfolio
+    </a>
+
+
+    <script src="whatsapp.js"></script>
+
+</body>
+</html>

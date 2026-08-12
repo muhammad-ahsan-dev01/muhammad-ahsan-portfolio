@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ahsan AI Chatbot</title>
+
+    <link rel="stylesheet" href="ai-chatbot.css">
+
+</head>
+
+
+<body>
+
+    <div class="chat-container">
+
+
+        <!-- =========================
+             CHAT HEADER
+        ========================== -->
+
+        <div class="chat-header">
+
+            <div>
+
+                <h1>🤖 Ahsan AI</h1>
+
+                <p>Smart Personal Chatbot</p>
+
+            </div>
+
+            <span class="online">
+                ● Online
+            </span>
+
+        </div>
+
+
+        <!-- =========================
+             CHAT MESSAGES
+        ========================== -->
+
+        <div id="chatBox" class="chat-box">
+
+
+            <!-- Initial Bot Message -->
+
+            <div class="message bot">
+
+                <div class="avatar">
+                    🤖
+                </div>
+
+                <div class="message-content">
+
+                    <p>
+                        Hello! 👋 I'm Ahsan AI.
+                        How can I help you today?
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- =========================
+             QUICK BUTTONS
+        ========================== -->
+
+        <div class="quick-buttons">
+
+
+            <button onclick="quickMessage('Hello')">
+
+                👋 Hello
+
+            </button>
+
+
+            <button onclick="quickMessage('What can you do?')">
+
+                💡 What can you do?
+
+            </button>
+
+
+            <button onclick="quickMessage('Tell me about Ahsan')">
+
+                👨‍💻 About Ahsan
+
+            </button>
+
+
+        </div>
+
+
+        <!-- =========================
+             CHAT INPUT
+        ========================== -->
+
+        <div class="chat-input">
+
+
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Type your message..."
+                autocomplete="off"
+            >
+
+
+            <button id="sendBtn">
+
+                Send
+
+            </button>
+
+
+        </div>
+
+
+        <!-- =========================
+             BACK TO PORTFOLIO
+        ========================== -->
+
+        <a href="index.html" class="back-btn">
+
+            ← Back to Portfolio
+
+        </a>
+
+
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="ai-chatbot.js"></script>
+
+
+</body>
+
+</html>
