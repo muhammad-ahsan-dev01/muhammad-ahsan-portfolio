@@ -15,6 +15,12 @@ html {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    overflow-x: hidden;
+    background: #f8fafc;
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -23,10 +29,11 @@ body {
 ========================= */
 
 nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 80px;
+    padding: 18px 70px;
     background: #0f172a;
     position: sticky;
     top: 0;
@@ -41,16 +48,18 @@ nav {
 
 nav ul {
     display: flex;
+    align-items: center;
+    gap: 30px;
     list-style: none;
 }
 
 nav ul li {
-    margin-left: 30px;
+    margin: 0;
 }
 
 nav ul li a {
     color: white;
-    text-decoration: none;
+    font-size: 16px;
     transition: 0.3s;
 }
 
@@ -60,52 +69,69 @@ nav ul li a:hover {
 
 
 /* =========================
-   HERO SECTION
+   HERO
 ========================= */
 
 .hero {
+    min-height: 650px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 60px;
     padding: 80px;
     background: #0f172a;
     color: white;
-    min-height: 600px;
 }
 
 .hero-text {
-    width: 50%;
+    width: 55%;
 }
 
 .hero-text h1 {
-    font-size: 50px;
+    font-size: 52px;
+    line-height: 1.2;
     margin-bottom: 15px;
 }
 
 .hero-text h3 {
     color: #38bdf8;
+    font-size: 26px;
     margin-bottom: 20px;
-    font-size: 25px;
-    transition: opacity 0.4s ease;
 }
 
 .hero-text p {
     font-size: 18px;
-    line-height: 1.7;
+    line-height: 1.8;
     margin-bottom: 30px;
+    max-width: 650px;
+}
+
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.hero-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-image img {
-    width: 350px;
-    height: 400px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 450px;
+    height: 500px;
+    border-radius: 60%;
+    object-fit: contain;
+    object-position: center;
+    background: white;
     border: 5px solid #f8fafc;
-    transition: 0.5s;
+    display: block;
+    transition: 0.4s ease;
 }
 
 .hero-image img:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 
@@ -113,42 +139,31 @@ nav ul li a:hover {
    BUTTONS
 ========================= */
 
-button {
-    padding: 12px 25px;
-    border: none;
-    background: #0f172a;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 15px;
-    transition: 0.3s;
-    border: 2px solid white;
-}
-
-button:hover {
-    background: #0284c7;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
+    padding: 13px 25px;
+    margin-top: 10px;
     background: #38bdf8;
     color: white;
-    text-decoration: none;
     border-radius: 8px;
+    font-size: 16px;
     transition: 0.3s;
 }
 
 .btn:hover {
     background: #0284c7;
-    transform: scale(1.05);
-    color: white;
+    transform: translateY(-3px);
 }
 
 .btn2 {
-    background: #0f172a;
+    background: transparent;
     border: 2px solid white;
 }
 
@@ -159,21 +174,52 @@ button:hover {
 
 
 /* =========================
-   PRACTICE SECTION
+   ABOUT
+========================= */
+
+#about {
+    padding: 80px 20px;
+    text-align: center;
+    background: #f8fafc;
+}
+
+#about h2 {
+    color: #38bdf8;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+#about p {
+    max-width: 800px;
+    margin: auto;
+    color: #0f172a;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   PRACTICE
 ========================= */
 
 #practice {
-    padding: 50px;
+    padding: 60px 20px;
     text-align: center;
+    background: #f8fafc;
+}
+
+#practice h2 {
     color: #38bdf8;
+    margin-bottom: 25px;
 }
 
 #practice input {
     width: 300px;
+    max-width: 90%;
     padding: 12px;
     border: 2px solid #38bdf8;
     border-radius: 8px;
-    margin-right: 10px;
+    margin: 8px;
     font-size: 16px;
 }
 
@@ -187,14 +233,15 @@ button:hover {
 ========================= */
 
 #calculator {
-    padding: 60px;
+    padding: 70px 20px;
     text-align: center;
     background: #f8fafc;
 }
 
 #calculator input {
     width: 200px;
-    padding: 10px;
+    max-width: 90%;
+    padding: 12px;
     margin: 10px;
     border: 2px solid #38bdf8;
     border-radius: 8px;
@@ -202,9 +249,10 @@ button:hover {
 }
 
 #calculator button {
-    padding: 10px 20px;
-    color: #f8fafc;
-    background-color: #38bdf8;
+    padding: 12px 25px;
+    color: white;
+    background: #38bdf8;
+    border: none;
 }
 
 #answer {
@@ -214,43 +262,36 @@ button:hover {
 
 
 /* =========================
-   SKILLS SECTION
+   SKILLS
 ========================= */
 
 #skills {
-    padding: 60px 80px;
+    padding: 80px;
     background: #f8fafc;
 }
 
-#skills h1 {
-    background: #0f172a;
-    padding: 40px 20px;
-    text-align: center;
-    color: #38bdf8;
-}
-
 #skills h2 {
-    padding: 40px 20px;
     text-align: center;
     color: #38bdf8;
-    margin-bottom: 40px;
     font-size: 40px;
-    background-color: #0f172a;
+    margin-bottom: 50px;
 }
 
 .skill {
-    margin-bottom: 25px;
+    max-width: 900px;
+    margin: 0 auto 30px;
 }
 
 .skill h3 {
     margin-bottom: 10px;
+    color: #0f172a;
 }
 
 .skill-bar {
     width: 100%;
     height: 15px;
-    background: #dbdce0;
-    border-radius: 10px;
+    background: #dbe1e8;
+    border-radius: 20px;
     overflow: hidden;
 }
 
@@ -274,7 +315,7 @@ button:hover {
 
 
 /* =========================
-   PROJECTS SECTION
+   PROJECTS
 ========================= */
 
 #projects {
@@ -299,9 +340,10 @@ button:hover {
 
 .project-card {
     width: 300px;
+    min-height: 250px;
     background: #1e293b;
     padding: 25px;
-    border-radius: 12px;
+    border-radius: 15px;
     text-align: center;
     transition: 0.3s;
 }
@@ -321,34 +363,18 @@ button:hover {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 
-
-/* Project Button */
-
 .project-card .btn {
     display: inline-block;
-    padding: 12px 25px;
-    background: #38bdf8;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 400;
-    transition: 0.3s;
-}
-
-.project-card .btn:hover {
-    background: #0284c7;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
 }
 
 
 /* =========================
-   CONTACT SECTION
+   CONTACT
 ========================= */
 
 .contact {
-    padding: 80px;
+    padding: 80px 20px;
     background: #0f172a;
     text-align: center;
 }
@@ -361,6 +387,7 @@ button:hover {
 
 .contact form {
     width: 60%;
+    max-width: 700px;
     margin: auto;
 }
 
@@ -368,32 +395,35 @@ button:hover {
 .contact textarea {
     width: 100%;
     padding: 15px;
-    margin: 15px 0;
-    border: 2px solid #0f172a;
+    margin: 10px 0;
+    border: 2px solid #dbe1e8;
     border-radius: 10px;
     font-size: 16px;
     outline: none;
 }
 
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #38bdf8;
+}
+
 .contact textarea {
     height: 150px;
-    resize: none;
+    resize: vertical;
 }
 
 .contact button {
-    padding: 15px 30px;
+    padding: 14px 30px;
     background: #38bdf8;
     color: white;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-size: 18px;
-    transition: 0.3s;
 }
 
 .contact button:hover {
-    background: #0f172a;
-    transform: scale(1.05);
+    background: #0284c7;
 }
 
 
@@ -403,45 +433,117 @@ button:hover {
 
 footer {
     background: #0f172a;
-    color: #f8fafc;
+    color: white;
     text-align: center;
     padding: 25px;
-    font-size: 16px;
 }
 
 
 /* =========================
-   MOBILE RESPONSIVE
+   TABLET
 ========================= */
 
-@media (max-width: 768px) {
-
-    /* Navbar */
+@media (max-width: 900px) {
 
     nav {
-        flex-direction: column;
-        padding: 20px;
+        padding: 18px 25px;
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-        width: 100%;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 60px 30px;
+        gap: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 42px;
+    }
+
+    .hero-image img {
+        width: 280px;
+        height: 280px;
+    }
+
+    #skills,
+    #projects {
+        padding: 60px 30px;
+    }
+
+    .contact form {
+        width: 80%;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    /* NAVBAR */
+
+    nav {
+        padding: 14px 12px;
+        gap: 8px;
+    }
+
+    .logo {
+        font-size: 21px;
+        flex-shrink: 0;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 7px;
+        overflow-x: auto;
+        white-space: nowrap;
+        max-width: 75%;
+        scrollbar-width: none;
+    }
+
+    nav ul::-webkit-scrollbar {
+        display: none;
     }
 
     nav ul li {
-        margin: 10px 0;
+        flex-shrink: 0;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+        padding: 3px;
     }
 
 
-    /* Hero */
+    /* HERO */
 
     .hero {
-        flex-direction: column-reverse;
-        text-align: center;
-        padding: 50px 20px;
         min-height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 18px 55px;
+        gap: 25px;
+    }
+
+    .hero-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        object-fit: contain;
+        object-position: center;
+        border: 4px solid #f8fafc;
+        background: white;
     }
 
     .hero-text {
@@ -449,7 +551,8 @@ footer {
     }
 
     .hero-text h1 {
-        font-size: 36px;
+        font-size: 34px;
+        line-height: 1.2;
     }
 
     .hero-text h3 {
@@ -457,95 +560,115 @@ footer {
     }
 
     .hero-text p {
-        font-size: 16px;
-    }
-
-    .hero-image img {
-        width: 220px;
-        height: 220px;
-        margin-bottom: 30px;
+        font-size: 15px;
+        line-height: 1.7;
     }
 
 
-    /* Buttons */
+    /* BUTTONS */
 
-    .hero .btn {
-        margin: 8px 4px;
+    .hero-buttons {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero-buttons .btn {
+        padding: 11px 18px;
+        font-size: 14px;
+        margin-top: 5px;
     }
 
 
-    /* Skills */
+    /* ABOUT */
+
+    #about {
+        padding: 55px 20px;
+    }
+
+    #about h2 {
+        font-size: 32px;
+    }
+
+    #about p {
+        font-size: 15px;
+    }
+
+
+    /* SKILLS */
 
     #skills {
-        padding: 50px 20px;
+        padding: 55px 20px;
     }
 
     #skills h2 {
-        font-size: 30px;
-        padding: 30px 10px;
+        font-size: 32px;
     }
 
 
-    /* Projects */
+    /* PROJECTS */
 
     #projects {
-        padding: 50px 20px;
+        padding: 55px 15px;
     }
 
     #projects h2 {
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .project-container {
-        flex-direction: column;
-        align-items: center;
+        gap: 20px;
     }
 
     .project-card {
         width: 100%;
-        max-width: 350px;
+        max-width: 340px;
     }
 
 
-    /* Contact */
+    /* CONTACT */
 
     .contact {
-        padding: 50px 20px;
+        padding: 55px 20px;
     }
 
     .contact h2 {
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .contact form {
         width: 100%;
     }
 
+    .contact input,
+    .contact textarea {
+        font-size: 15px;
+    }
 
-    /* Practice */
+
+    /* CALCULATOR */
+
+    #calculator {
+        padding: 50px 15px;
+    }
+
+
+    /* PRACTICE */
 
     #practice {
-        padding: 40px 20px;
+        padding: 50px 15px;
     }
 
     #practice input {
         width: 100%;
-        margin: 10px 0;
-    }
-
-    #practice button {
-        margin: 10px 0;
+        max-width: 350px;
+        margin: 8px 0;
     }
 
 
-    /* Calculator */
+    /* FOOTER */
 
-    #calculator {
-        padding: 40px 20px;
+    footer {
+        font-size: 14px;
+        padding: 20px 10px;
     }
-
-    #calculator input {
-        width: 90%;
-    }
-
 }
