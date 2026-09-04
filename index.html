@@ -215,23 +215,42 @@
 </div>
 
     </div>
-
-
+    </section>
 
     <!-- Contact -->
     <section id="contact" class="contact">
 
         <h2>Contact Me</h2>
 
-        <form>
+        <form id="contactForm"
+              action="https://formspree.io/f/xeaqzrle"
+              method="POST">
 
-            <input type="text" placeholder="Your Name">
+            <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+            >
 
-            <input type="email" placeholder="Your Email">
+            <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+            >
 
-            <textarea placeholder="Your Message"></textarea>
+            <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+            ></textarea>
 
-            <button type="submit">Send Message</button>
+            <button type="submit" id="sendBtn">
+                Send Message
+            </button>
+
+            <p id="formMessage"></p>
 
         </form>
 
@@ -239,12 +258,11 @@
 
     <!-- Footer -->
     <footer>
-
         <p>&copy; 2026 Muhammad Ahsan. All Rights Reserved.</p>
-
     </footer>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
+
 </body>
 </html>
